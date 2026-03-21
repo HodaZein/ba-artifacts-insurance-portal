@@ -19,7 +19,7 @@
 
 **Notes**
 - Password policy: ≥ 12 chars, at least one digit, one symbol.
-- Verifcation link valid 24 h.
+- Verification link valid 24 h.
 
 ---
 
