@@ -1,15 +1,15 @@
-# RACI — Customer Self-Service Portal
+# RACI
 
-R = Responsible · A = Accountable · C = Consulted · I = Informed
+R = responsible, A = accountable, C = consulted, I = informed
 
-| Activity / Deliverable        | BA  | PO  | Tech Lead | Sponsor | Compliance | QA  |
-|-------------------------------|-----|-----|-----------|---------|------------|-----|
-| Scope definition              | R   | A   | C         | C       | C          | I   |
-| Requirements elicitation      | R/A | C   | C         | I       | C          | I   |
-| Process modelling (BPMN)      | R/A | C   | C         | I       | C          | I   |
-| User stories & acceptance     | R   | A   | C         | I       | C          | C   |
-| Backlog prioritisation        | C   | R/A | C         | C       | I          | I   |
-| Solution design               | C   | C   | R/A       | I       | C          | I   |
-| Test strategy & UAT plan      | R   | A   | C         | I       | C          | R   |
-| Go / no-go decision           | C   | C   | C         | R/A     | C          | C   |
-| Post-launch metrics review    | R   | A   | C         | C       | I          | C   |
+| activity | BA | PO | tech lead | sponsor | compliance | QA |
+|---|---|---|---|---|---|---|
+| scope definition | R | A | C | C | C | I |
+| requirements elicitation | R/A | C | C | I | C | I |
+| process modelling (BPMN) | R/A | C | C | I | C | I |
+| user stories + AC | R | A | C | I | C | C |
+| backlog prioritisation | C | R/A | C | C | I | I |
+| solution design | C | C | R/A | I | C | I |
+| test strategy + UAT plan | R | A | C | I | C | R |
+| go / no-go decision | C | C | C | R/A | C | C |
+| post-launch metrics review | R | A | C | C | I | C |

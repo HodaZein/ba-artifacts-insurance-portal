@@ -1,11 +1,8 @@
-# Process Models
+# Process models
 
-BPMN-style flows for the most important MVP journeys, expressed as
-[Mermaid](https://mermaid.js.org) so they render natively on GitHub.
+BPMN-ish flows for the MVP journeys, written as mermaid so github renders them.
 
-| Flow                          | File                          |
-|-------------------------------|-------------------------------|
-| As-is: phone service request  | [as-is-phone.md](as-is-phone.md) |
-| To-be: portal service request | [to-be-portal.md](to-be-portal.md) |
-| FNOL submission               | [fnol.md](fnol.md)            |
-| Address update                | [address-update.md](address-update.md) |
+- as-is phone service request -> `as-is-phone.md`
+- to-be portal service request -> `to-be-portal.md`
+- FNOL submission -> `fnol.md`
+- address update -> `address-update.md`

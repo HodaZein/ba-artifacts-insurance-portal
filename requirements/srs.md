@@ -1,42 +1,33 @@
-# SRS — Customer Self-Service Portal (lightweight)
+# SRS - customer self-service portal (MVP)
 
-This is an intentionally short SRS focused on the MVP scope. Detailed
-behaviour is defined per epic in [`../user-stories/`](../user-stories/).
+Intentionally short. Detailed behaviour lives per epic in `../user-stories/`.
 
-## 1. Overview
-A web portal letting policyholders manage common service tasks online.
-See [`scope.md`](scope.md) for goals and stakeholders.
+## 1. overview
+Web portal letting policyholders manage common service tasks online. See `scope.md` for goals + stakeholders.
 
-## 2. Functional requirements
-| ID    | Requirement                                                          | Priority |
-|-------|----------------------------------------------------------------------|----------|
-| F-01  | A user can register using a valid email and password                 | Must     |
-| F-02  | A user can log in and a session is maintained for 30 minutes idle    | Must     |
-| F-03  | A user can enable optional MFA (TOTP authenticator app)              | Should   |
-| F-04  | A user can view a list of their active and historical policies       | Must     |
-| F-05  | A user can download the policy schedule and certificate as PDF       | Must     |
-| F-06  | A user can update postal address, phone, and email                   | Must     |
-| F-07  | Email change requires re-verification of the new address             | Must     |
-| F-08  | A user can submit a First Notice of Loss for a motor or home policy  | Must     |
-| F-09  | A user can attach photos / documents to a claim (max 10, 10 MB ea.)  | Must     |
-| F-10  | A user can view current status of an open claim                      | Must     |
-| F-11  | A user can exchange messages with the assigned claim handler         | Should   |
+## 2. functional requirements
+- F-01 register with valid email + password (must)
+- F-02 log in, session 30 min idle (must)
+- F-03 optional MFA via TOTP authenticator (should)
+- F-04 view active + historical policies (must)
+- F-05 download policy schedule + certificate as PDF (must)
+- F-06 update postal address, phone, email (must)
+- F-07 email change requires re-verification of the new address (must)
+- F-08 submit FNOL for motor + home (must)
+- F-09 attach photos / docs to a claim, max 10 files, 10MB each (must)
+- F-10 view current status of an open claim (must)
+- F-11 exchange messages with assigned claim handler (should)
 
-## 3. Non-functional requirements
-| ID    | Requirement                                                          | Target   |
-|-------|----------------------------------------------------------------------|----------|
-| N-01  | Time-to-first-document after login (p95)                             | < 30 s   |
-| N-02  | Page TTFB on cached login page                                       | < 800 ms |
-| N-03  | Availability (business hours)                                        | 99.5%    |
-| N-04  | Accessibility                                                        | WCAG 2.1 AA |
-| N-05  | All data at rest encrypted                                           | AES-256  |
-| N-06  | All data in transit                                                  | TLS 1.2+ |
-| N-07  | Personal data retained per existing carrier retention policy         | n/a      |
+## 3. non-functional requirements
+- N-01 time-to-first-document after login: < 30s p95
+- N-02 page TTFB on cached login page: < 800 ms
+- N-03 availability (business hours): 99.5%
+- N-04 accessibility: WCAG 2.1 AA
+- N-05 data at rest: AES-256
+- N-06 data in transit: TLS 1.2+
+- N-07 retention follows existing carrier policy
 
-## 4. Assumptions, dependencies, constraints
-See [`scope.md`](scope.md) sections "Assumptions" and "Constraints".
-
-## 5. Open questions
-- Q1. Will MFA be mandatory in v2 or remain opt-in?
-- Q2. What is the SLA for the policy admin REST API under portal load?
-- Q3. Should the portal expose claim history older than 24 months?
+## 4. open questions
+- Q1 will MFA become mandatory in v2 or stay opt-in? (lean mandatory, see ADR-0002)
+- Q2 SLA for the policy admin REST API under portal load - waiting on IT
+- Q3 should the portal show claim history older than 24 months? sponsor to confirm

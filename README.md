@@ -1,29 +1,21 @@
-# BA Artifacts — Sample Insurance Customer Portal
+# BA artifacts - sample insurance customer portal
 
-A reference set of Business Analyst artifacts for a fictional **insurance
-self-service portal** project. Inspired by real engagements but fully
-sanitised — no client data, no real product names.
+A reference set of BA artifacts for a fictional insurance self-service portal. Inspired by real engagements but fully sanitised - no client data, no real product names.
 
-I keep this repo as a living example of the BA artifacts I produce during
-discovery and delivery: BPMN flows, user stories with acceptance criteria,
-a lightweight SRS, decision records, and a UAT plan.
+I keep this repo as a living example of the kind of artifacts I produce during discovery and delivery: BPMN-ish flows, user stories with acceptance criteria, a lightweight SRS, decision records, a UAT plan.
 
-## Contents
-| Folder           | What's inside                                              |
-|------------------|------------------------------------------------------------|
-| `requirements/`  | High-level scope, SRS, glossary, RACI                      |
-| `process/`       | BPMN-style process diagrams (Mermaid) for key journeys     |
-| `user-stories/`  | User stories grouped by epic, with acceptance criteria     |
-| `uat/`           | UAT plan, test cases, sign-off template                    |
-| `decisions/`     | Architecture / scope decision records (ADR-style)          |
+## what's here
+- `requirements/` - scope, srs, glossary, raci
+- `process/` - process diagrams (mermaid, renders on github)
+- `user-stories/` - stories grouped by epic, with AC
+- `uat/` - uat plan, test cases, sign-off template
+- `decisions/` - small ADRs for the notable choices
 
-## How to read this repo
-Start with [`requirements/scope.md`](requirements/scope.md) for the
-project context, then [`process/`](process/) for the as-is / to-be flows,
-then [`user-stories/`](user-stories/) for the backlog.
+## how to read it
+start with `requirements/scope.md` for context, then `process/` for the as-is/to-be flows, then `user-stories/` for the backlog.
 
-## Stack & conventions
-- Markdown-only, GitHub renders BPMN via Mermaid.
-- User stories follow the `As a ... I want ... so that ...` pattern.
-- Acceptance criteria written in **Given / When / Then** (Gherkin-ish).
-- ADRs follow the [Michael Nygard ADR template](https://cognitect.com/).
+## conventions
+- markdown only, github renders the bpmn-as-mermaid bits
+- user stories: "As a ... I want ... so that ..."
+- AC: Given / When / Then-ish (not strict gherkin)
+- ADRs: short, michael-nygard style

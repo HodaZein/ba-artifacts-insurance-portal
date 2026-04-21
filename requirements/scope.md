@@ -1,55 +1,46 @@
-# Project Scope — Customer Self-Service Portal
+# Project scope - customer self-service portal
 
 ## Context
-The client is a mid-size general insurance carrier offering motor, home
-and travel policies. Today, customers contact a call centre to retrieve
-documents, submit claims, or update personal data. Average handling time
-per request is **~7 minutes** and the call centre is a known cost centre.
+Mid-size general insurance carrier offering motor, home and travel policies. Today, customers call a call centre for documents, claim submission, simple data updates. Avg handling time around 7 min per request and the call centre is a known cost centre.
 
 ## Goal
-Deliver a **self-service web portal** that lets policyholders perform
-the most common, low-risk service tasks online, reducing inbound call
-volume by an estimated **30%** within 12 months of go-live.
+Self-service web portal that lets policyholders do the most common low-risk service tasks online. Target: cut inbound call volume ~30% within 12 months of go-live.
 
 ## In scope (MVP)
-- Customer registration and login (email + password, optional MFA)
-- Policy overview (active and historical)
-- Document download (policy schedule, certificate of insurance)
-- Personal data updates (address, phone, email — with re-verification)
-- First Notice of Loss (FNOL) for motor and home claims
-- Claim status tracking
-- Secure messaging with claim handler
+- registration + login (email + password, optional MFA)
+- policy overview (active + historical)
+- document download (policy schedule, certificate of insurance)
+- update personal data (address, phone, email - email needs re-verification)
+- FNOL for motor + home claims
+- claim status tracking
+- secure messaging with the assigned claim handler
 
 ## Out of scope (MVP)
-- Online policy purchase or quote-and-buy
-- Premium payment management (handled by existing finance system)
-- Broker-facing functionality
-- Native mobile applications
+- online quote-and-buy
+- premium payment management (stays in finance system)
+- broker-facing functionality
+- native mobile apps (see ADR-0001)
 
 ## Success metrics
-| Metric                                    | Baseline | Target (12 mo) |
-|-------------------------------------------|----------|----------------|
-| Inbound call volume (service requests)    | 100%     | -30%           |
-| FNOL submissions via portal               | 0%       | ≥ 40%          |
-| Customer satisfaction (CSAT, post-task)   | n/a      | ≥ 4.2 / 5      |
-| Time-to-first-document after login        | n/a      | < 30 s (p95)   |
+- inbound call volume (service requests): -30% vs baseline at 12 months
+- FNOL via portal: at least 40% of all FNOLs at 12 months
+- post-task CSAT: >= 4.2 / 5
+- time-to-first-document after login: < 30s p95
 
 ## Stakeholders
-| Stakeholder         | Role                                            |
-|---------------------|-------------------------------------------------|
-| Head of Operations  | Sponsor, P&L owner                              |
-| Call Centre Lead    | SME, beneficiary of call-deflection             |
-| Claims Lead         | SME, owner of FNOL & claim-status flows         |
-| Compliance / DPO    | GDPR & insurance-distribution regulation        |
-| IT Architecture     | Integration with policy admin & claims systems  |
+- Head of Operations - sponsor, owns the P&L
+- Call centre lead - SME, beneficiary of call deflection
+- Claims lead - SME, owner of FNOL + claim status
+- Compliance / DPO - GDPR + insurance distribution regulation
+- IT architecture - integration with policy admin + claims systems
 
 ## Assumptions
-- The existing policy admin system exposes a REST API for policy reads.
-- The claims system supports webhook notifications for status changes.
-- A single SSO identity provider will be used for customer accounts.
+- policy admin system exposes a REST API for policy reads
+- claims system supports webhooks for status changes
+- single SSO identity provider for customer accounts
 
 ## Constraints
-- GDPR; data residency in the EU.
-- Insurance Distribution Directive (IDD) — pre-contract information.
-- Web Content Accessibility Guidelines (WCAG) 2.1 AA.
-- Project budget timeline locked at **6 calendar months** to MVP.
+- GDPR, EU data residency
+- IDD (insurance distribution directive) - pre-contract info
+- WCAG 2.1 AA
+- 6 calendar months to MVP

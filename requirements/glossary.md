@@ -1,14 +1,12 @@
 # Glossary
 
-| Term            | Definition                                                     |
-|-----------------|----------------------------------------------------------------|
-| Policyholder    | Natural person named as the insured on an active policy.       |
-| Policy          | A contract of insurance between the carrier and a policyholder.|
-| FNOL            | First Notice of Loss — initial report of a claim event.        |
-| Claim           | A request for indemnification under a policy following a loss. |
-| Claim handler   | Internal user assigned to manage a claim through to settlement.|
-| Service request | Any non-claim interaction (document, data update, query).      |
-| Self-service    | A task the customer can complete in the portal without staff.  |
-| MFA             | Multi-factor authentication.                                   |
-| IDD             | Insurance Distribution Directive (EU 2016/97).                 |
-| WCAG            | Web Content Accessibility Guidelines.                          |
+- **policyholder** - natural person named as the insured on an active policy
+- **policy** - contract of insurance between the carrier and a policyholder
+- **FNOL** - first notice of loss, the initial report of a claim event
+- **claim** - request for indemnification under a policy following a loss
+- **claim handler** - internal user assigned to manage a claim
+- **service request** - any non-claim interaction (document, data update, query)
+- **self-service** - a task the customer can complete in the portal alone
+- **MFA** - multi-factor authentication
+- **IDD** - insurance distribution directive (EU 2016/97)
+- **WCAG** - web content accessibility guidelines
