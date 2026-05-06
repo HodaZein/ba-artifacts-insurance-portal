@@ -1,6 +1,6 @@
 # UAT test cases
 
-selected sample. full set lives in jira (PORTAL project).
+selected sample.
 
 - TC-001 register with valid email + strong pwd (US-IA-01, high)
 - TC-002 register with already-used email - generic msg, no enumeration (US-IA-01, high)
