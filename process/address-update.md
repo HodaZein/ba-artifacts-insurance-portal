@@ -2,7 +2,7 @@
 
 ```mermaid
 flowchart TD
-    A([Customer opens "My data"]) --> B[Edit address]
+    A([Customer opens My data]) --> B[Edit address]
     B --> C{Country in EU?}
     C -- No --> D[Show "contact us" - manual review]
     C -- Yes --> E[Validate postal format]
