@@ -4,7 +4,7 @@
 flowchart TD
     A([Customer opens My data]) --> B[Edit address]
     B --> C{Country in EU?}
-    C -- No --> D[Show "contact us" - manual review]
+    C -- No --> D[Show Contact us - manual review]
     C -- Yes --> E[Validate postal format]
     E --> F{Valid?}
     F -- No --> G[Show inline error]
